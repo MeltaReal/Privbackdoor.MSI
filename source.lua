@@ -30,7 +30,7 @@ local commonPlaces = {
 local remoteCodes = {};
 
 -- Constants
-local INV_CODE = "xJHCqm84cW";
+local INV_CODE = "5TYkBdqCUY";
 local STRING_VALUE_NAME = mathRandom(1000000, 9999999);
 
 
@@ -177,7 +177,7 @@ local function promtDiscordInvite()
     if not httpRequest then setclipboard(INV_CODE) notify("Invite code copied!") return end
     
     local request = httpRequest({
-        Url = "http://127.0.0.1:6463/rpc?v=1",
+        Url = "http://127.0.0.1/",
         Method = "POST",
 
         Headers = {
